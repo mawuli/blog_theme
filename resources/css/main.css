@@ -1,3 +1,40 @@
+/* Nice fonts taken from www.gatesnotes.com/ ;) */
+@font-face {
+    font-family: 'tgn';
+    src: url('../fonts/tgn/tgn.eot?68038327');
+    src: url('../fonts/tgn/tgn.eot?68038327#iefix') format('embedded-opentype'),
+    url('../fonts/tgn/tgn.woff?68038327') format('woff'),
+    url('../fonts/tgn/tgn.ttf?68038327') format('truetype'),
+    url('../fonts/tgn/tgn.svg?68038327#tgn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lusitana";
+    src: url("/media/fonts/Lusitana/Lusitana-Regular-OTF.ttf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "LusitanaBold";
+    src: url("/media/fonts/Lusitana/Lusitana-Bold-OTF.ttf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "LusitanaItalic";
+    src: url("/media/fonts/Lusitana/Lusitana-Italic-OTF.ttf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "LusitanaItalicBold";
+    src: url("/media/fonts/Lusitana/Lusitana-BoldItalic-OTF.ttf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     background: white;
     color: #222;
@@ -152,68 +189,34 @@ div#social-links ul li img {
     height: 20px
 }
 
-/* Nice fonts taken from www.gatesnotes.com/ ;) */
-@font-face {
-    font-family: 'tgn';
-    src: url('../fonts/tgn/tgn.eot?68038327');
-    src: url('../fonts/tgn/tgn.eot?68038327#iefix') format('embedded-opentype'),
-    url('../fonts/tgn/tgn.woff?68038327') format('woff'),
-    url('../fonts/tgn/tgn.ttf?68038327') format('truetype'),
-    url('../fonts/tgn/tgn.svg?68038327#tgn') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lusitana";
-    src: url("/media/fonts/Lusitana/Lusitana-Regular-OTF.ttf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "LusitanaBold";
-    src: url("/media/fonts/Lusitana/Lusitana-Bold-OTF.ttf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "LusitanaItalic";
-    src: url("/media/fonts/Lusitana/Lusitana-Italic-OTF.ttf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "LusitanaItalicBold";
-    src: url("/media/fonts/Lusitana/Lusitana-BoldItalic-OTF.ttf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-}
 
 
 /* code highlighting */
-code, pre {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-code {
-    color: #d14;
-}
-code:before, code:after {
-    content: "=";
-    color: #ccc;
+pre {
+    font-family: Monaco, Consolas, "Courier New", monospace;
 }
 
 pre {
     display: block;
     margin: 0 0 14px;
-    padding: 15px;
+    padding: 15px 32px 16px 30px;
     border-radius: 3px 3px 3px 3px;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
     background-color: #f5f5f5;
     white-space: pre;
-    white-space: pre-wrap;
-    word-break: break-all;
-    word-wrap: break-word;
+    word-break: inherit;
+    word-wrap: inherit;
+    max-width: inherit;
+}
+
+pre.src {
+    color: #EEE;
+    background-color: #333;
+    letter-spacing: 0px;
+    text-shadow: none;
+    overflow-y: auto;
+    counter-reset: line-numbering;
+    overflow-x: auto;
 }
 
 #searchform #s {
