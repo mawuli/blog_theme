@@ -245,3 +245,8 @@ pre.src {
     background-color: #f9f9f9;
     width: 160px;
 }
+
+
+#welcome img {
+    height: 470px !important
+}
